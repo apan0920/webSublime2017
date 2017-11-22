@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
+	<title>´´½¨¶¯»­</title>
+	<script type="text/javascript" src="jquery-3.2.1/jquery-3.2.1.js"></script>
+	
+</head>
+<body>
+
+	<canvas id="myCanvas" width="1000" height="500" > </canvas>
+	<div>
+		<button id="startBtn" style="width: 60px;" >start</button>
+		<button id="endBtn" style="width: 60px; display: none;"  >end</button>
+	</div>
+	
+</body>
+	<script>
+		$(document).ready(function () {
+	        var canvas = $("#myCanvas");
+	        var context = canvas.get(0).getContext("2d");
+	        var canvasWidth = canvas.width();
+	        var canvasHeight = canvas.height();
+
+	        var playAnimation = false;
+	        $("#startBtn").click(function(){
+	        	$("#startBtn").hide();
+	        	$("#endBtn").show();
+	        	playAnimation = true;
+	        	animate();
+	        	        	
+	        });
+	        
+	        $("#endBtn").click(function(){
+	        	$("#endBtn").hide();
+	        	$("#startBtn").show();
+	        	playAnimation = false;
+	        });
+			var x=0;
+	        function animate(){
+	        	x++;
+	        	context.clearRect(0,0,canvasWidth,canvasHeight);
+	        	context.fillRect(x,250,50,50);
+	        	//console.log('x==='+x);
+	        	
+				if (playAnimation) { 
+				setTimeout(animate, 33); 
+				};
+	        }
+	        
+	      animate();
+	        
+
+	   });
+	</script>
+</html>

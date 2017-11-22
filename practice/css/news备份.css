@@ -1,0 +1,58 @@
+- /*
+- * @description: ÐÂÎÅcss
+- * @author: pz
+- * @update: pz (2017-11-20 14:50)
+- */
+
+/* div{
+	margin:0px;
+}
+
+#header{
+	position: absolute;
+	float: left;
+	width: 1280px;
+	height: 111px; 
+	background-image: url(../image/news/bj2.jpg) ;
+	display: inline;
+	
+}
+
+#logo{
+	position : absolute;
+	float: left;
+	width : 380px;
+	height : 94px;
+	margin-top: 8px;
+	margin-left: 105px;
+} 
+
+#home{
+	float: left;
+	margin-top: 65px;
+	margin-left: 375px;
+	font-size: 14px;
+}
+ */
+
+#nav{
+	position: absolute;
+	float: left;
+	background-color: #004e87;
+	width: 1280px;
+	height: 35px;
+	line-height: 35px;
+	/* margin-top: 111px; */
+}
+
+ul{
+	margin:auto;
+}
+
+li{
+	list-style:none;
+	display: inline;
+	color:white;
+	padding: 0 27px;
+	float: left;
+}

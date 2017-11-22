@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
+	<title>第一</title>
+	<script type="text/javascript" src="jquery-3.2.1/jquery-3.2.1.js"></script>
+	
+</head>
+<body>
+
+	<canvas id="myCanvas" width="1000" height="500" > This is my first canvas </canvas>
+	
+</body>
+	<script>
+		$(document).ready(function () {
+	        var canvas = $("#myCanvas");
+	        var context = canvas.get(0).getContext("2d");
+
+	        // context.fillRect(0, 0, 200, 200);
+	        // context.strokeRect(10, 20, 200, 100);
+	        
+	       /* context.beginPath();
+	        context.moveTo(20,20);
+	        context.lineTo(80,80);
+	        context.closePath();
+	        context.stroke();
+			context.lineWidth = 20;//Make lines even thicker 
+	        */
+
+	     //    var degrees = 1; // 1 degree 
+    		// var radians = degrees * (Math.PI / 180); // 0.0175 radians
+
+	        /*context.beginPath(); // Start the path 
+		    context.arc(230, 90, 10, 0, Math.PI, false); // Draw a circle 
+		    context.closePath(); // Close the path 
+		    context.fill(); // Fill the path*/
+		    /*context.fillStyle = "Red"; 
+		    context.fillRect(40, 40, 50, 50); // Red square 
+
+		    context.lineWidth = 2;//Make lines even thicker
+		    context.strokeStyle = "pink";
+		    context.strokeRect(180, 40, 10, 10); // Red square 
+
+		    context.fillStyle = "rgb(0, 0, 0)"; 
+		    context.fillRect(220, 40, 20, 20); // Black square
+
+		    var  text ="hello,world!";
+		    	/*context.font = "italic 30px serif";
+		    	context.fillText(text,100,100);
+		    	context.font = "italic 80px serif"; 
+   				context.strokeText(text, 180, 500);*/
+
+   			/*context.fillRect(40, 40, 100, 100); 
+			context.clearRect(50, 50, 50, 50);
+
+		    context.beginPath();
+		    context.arc(230, 90, 50, 0, Math.PI*2, false); 
+		    context.closePath(); 
+		    context.fill(); 
+		    context.clearRect(230, 90, 50, 50);*/
+
+		    context.fillStyle = "rgb(255, 0, 0)"; 
+		    context.fillRect(40, 40, 100, 100); 
+		    context.beginPath(); 
+		    context.arc(230, 90, 50, 0, Math.PI*2, false); 
+		    context.closePath(); 
+		    context.fill();
+
+			/*重新设置宽度，高度技巧的缺点是，它会完全重置Canvas上的所有内容，包括样式和颜色。所以，只有准备完全重置Canvas，而不仅仅是清除内容时，你才能使用这种方法。*/
+		    canvas.attr("width", canvas.width()); 
+   			canvas.attr("height", canvas.height());
+   			context.fillRect(40, 40, 100, 100);
+
+	   });
+	</script>
+</html>
