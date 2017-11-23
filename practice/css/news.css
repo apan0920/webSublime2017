@@ -8,7 +8,9 @@ body{
 	text-align: center;
 	margin:0;
 	padding: 0;
-	font-family: SimHei;// SimSun
+	font-family: SimHei;
+	background-color: #F4F3EF;
+	
 } 
 
 div{
@@ -33,12 +35,10 @@ div{
 
 #home{
 	float: left;
-	margin-top: 65px;
-	margin-left: 375px;
+	margin-top: 72px;
+	margin-left: 369px;
 	font-size: 14px;
 } 
-
-
 #nav{
 	position: absolute;
 	float: left;
@@ -61,7 +61,6 @@ div{
 	display: inline;
 	color:white;
 	padding: 0 27px;
-	/* background-color: red; */
 	font-size: 16px;
 }
  
@@ -73,28 +72,100 @@ div{
 
 #mainLeft{
 	float: left;
-	padding-left: 150px;
-}
-
- #mainLeft > ul> li{
-	list-style:none;
-
-	/* display: inline;
-	color:white;
-	padding: 0 27px;
-	background-color: red;
-	font-size: 16px; */
-}
-
-#zhaosheng{
+	margin-left: 11%;
+	width: 20%;
+    margin-top: 30px;
     height: 33px;
-    margin-top: 25px;
     line-height: 33px;
     text-align: left;
-    padding-left: 60px;
     background:url(../image/news/link_bg.png) no-repeat; 
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #DBDBDB;
 }
-h6{
+
+#mainLeftUl{
+	padding-left: 0;
+}
+ #mainLeftUl>li{
+	/* list-style-image: url(../image/news/t2.png);
+	margin-left: 40px;
+	font-size: 12px;
+	border-bottom: 1px dotted red; */
+	border-bottom: #ccc 1px dotted;
+	line-height: 34px;
+	height: 34px;
+	width: 60%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: url(../image/news/t2.png) no-repeat 0 13px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+ #mainLeftUl>li>a {
+     font-family: SimHei;
+     color: #333;
+     text-decoration: none;
+     /* font-size: 13px;  */
+ }
+
+
+#tel{
 	float: left;
-    width: 237px;
+	margin-top: 20px;
+	margin-left: 30px;
+	font-size: 14px;
+} 
+
+#mainRight{
+	float: left;
+	margin-left: 2%;
+    margin-top: 30px;
+    text-align: left;
+    background-color: #F1F1F1;
+    width: 56%;
+}
+
+ #mainRightUl{
+ 	margin: 0;
+ 	padding: 0; 
+ 	background-color: #FFF;
+ }
+
+ #mainRightUl>li{
+	list-style-image: url(../image/news/t2.png);
+	margin-left: 40px;
+	font-size: 12px;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px dotted red;
+}
+
+#newCenter{
+	background-color: #F8F8F8;
+	height: 32px;
+	line-height: 32px;
+}
+
+#pages{
+	position: absolute;
+	/* float: left; */
+	margin-top: 10px;
+}
+ 
+#pagesUl{
+	margin:auto;
+	padding: inherit;
+	font-size: 0px;
+}
+
+
+#pagesUl > li{
+	list-style: none;
+	display: inline;
+	padding: 5px 15px;
+	margin: 0 2px;
+	font-size: 16px;
+	border: 1px solid #DADADA;
 }
