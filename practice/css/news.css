@@ -7,11 +7,14 @@
 body{
 	text-align: center;
 	margin:0;
-	padding: 0;
 	font-family: SimHei;
 	background-color: #F4F3EF;
-	
-} 
+}
+
+#wrapper{
+	margin: 0 10%;
+	width: 1280px;
+}
 
 div{
 	margin:0px;
@@ -19,7 +22,7 @@ div{
 
 #header{
 	float: left;
-	width: 1280px;
+	width: 100%;
 	height: 111px; 
 	background-image: url(../image/news/bj2.jpg) ;
 	display: inline;
@@ -40,13 +43,11 @@ div{
 	font-size: 14px;
 } 
 #nav{
-	position: absolute;
 	float: left;
 	background-color: #004e87;
-	width: 1280px;
+	width: 100%;
 	height: 35px;
 	line-height: 35px;
-	margin-top: 111px;
 	color: white;
 }
  
@@ -66,8 +67,7 @@ div{
  
 #main{
 	float: left;
-	width: 1280px;
-	margin-top: 35px;
+	width: 100%;
 }
 
 #mainLeft{
@@ -103,7 +103,7 @@ div{
 	font-size: 12px;
 }
 
- #mainLeftUl>li>a {
+a {
      font-family: SimHei;
      color: #333;
      text-decoration: none;
@@ -137,15 +137,25 @@ div{
 	list-style-image: url(../image/news/t2.png);
 	margin-left: 40px;
 	font-size: 12px;
+	width: 93%;
 	height: 35px;
 	line-height: 35px;
-	border-bottom: 1px dotted red;
+	/* border-bottom: 1px dotted red; */
 }
 
 #newCenter{
 	background-color: #F8F8F8;
 	height: 32px;
 	line-height: 32px;
+}
+
+#newCenterSpan{
+	font-size: 8px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 6px; 
+	color: gray;
+	height: 10px;
 }
 
 #pages{
@@ -168,4 +178,27 @@ div{
 	margin: 0 2px;
 	font-size: 16px;
 	border: 1px solid #DADADA;
+}
+
+hr{
+	margin: 0 8px;
+	border: 1px dotted #CCC;
+}
+
+span{
+	color:#E4E3E5;
+	float: right;
+}
+
+#footer{
+	float: left;
+	width: 100%;
+	height: 88px;
+	background-color: #004E87;
+	margin-top: 80px;
+	color: #FFF;
+	text-align: center;
+    padding-top: 45px;
+    font-size: 13px;
+    line-height: 25px;
 }
