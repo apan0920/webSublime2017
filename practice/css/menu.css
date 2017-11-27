@@ -1,0 +1,496 @@
+/*第一次添加网页总体布局的代码*/  
+* {  
+    margin:0px;   
+    padding:0px;  
+}  
+body {  
+    padding:0px;   
+    margin:0px;   
+    font-size:12px;  
+}  
+#top {  
+    background-image: url(images/head.jpg);  
+    background-repeat: no-repeat;  
+    height: 120px;  
+    width: 998px;  
+    margin-right: auto;  
+    margin-left: auto;  
+}  
+#nav {  
+    background-image: url(images/n_nav_bg.gif);  
+    background-repeat: repeat-x;  
+    height: 37px;  
+    width: 998px;  
+    margin-right: auto;  
+    margin-left: auto;  
+}  
+#adpic {  
+    background-image: url(images/h4.jpg);  
+    background-repeat: no-repeat;  
+    height: 218px;  
+    width: 998px;  
+    margin-right: auto;  
+    margin-left: auto;  
+}  
+#news {  
+    height: 720px;  
+    width: 998px;  
+    margin-right: auto;  
+    margin-left: auto;  
+}  
+#link {  
+    background-image: url(images/n_title_bg.gif);  
+    background-repeat: repeat-x;  
+    height: 40px;  
+    width: 998px;  
+    margin-right: auto;  
+    margin-left: auto;  
+}  
+#copyright {  
+    background-color: #E2E2E2;  
+    height: 80px;  
+    width: 998px;  
+    margin-top: 0px;  
+    margin-right: auto;  
+    margin-left: auto;  
+    border-top-width: 5px;/*设置5像素的上边框*/  
+    border-top-style: solid;  
+    border-top-color: #006042;  
+    margin-bottom: 0px;  
+}  
+#news #news_left {  
+    float: left;  
+    height: 720px;  
+    width: 233px;  
+    margin-right: 5px;  
+}  
+#news #news_mid {  
+    float: left;  
+    height: 720px;  
+    width: 455px;  
+    margin-right: 5px;  
+}  
+#news #news_right {  
+    height: 720px;  
+    width: 300px;  
+    float: left;  
+}  
+#news #news_left #news_left_top {  
+    height: 248px;  
+    width: 233px;  
+}  
+#news #news_left #news_left_mid {  
+    height: 240px;  
+    width: 233px;  
+}  
+#news #news_left #news_left_bottom {  
+    height: 232px;  
+    width: 233px;  
+}  
+#news #news_mid #news_mid_top {  
+    height: 488px;  
+    width: 455px;  
+}  
+#news #news_mid #news_mid_bottom {  
+    height: 232px;  
+    width: 455px;  
+}  
+#news #news_right #news_right_top {  
+    height: 248px;  
+    width: 300px;  
+}  
+#news #news_right #news_right_mid {  
+    height: 240px;  
+    width: 300px;  
+}  
+#news #news_right #news_right_bottom {  
+    height: 232px;  
+    width: 300px;  
+}  
+/*第二次添加导航栏和友情链接栏的代码，下拉菜单我们后面做*/  
+a:link { /*伪类选择页面中全部的超链接标签的未访问的链接状态*/  
+    color:#000000;   
+    text-decoration:none;  
+}  
+a:visited { /*伪类选择页面中全部的超链接标签的已访问的链接状态*/  
+    color:#000000;   
+    text-decoration:none;  
+}  
+a:hover{ /*伪类选择页面中全部的超链接标签的鼠标悬停的状态*/  
+    color:#FF0000;  
+    text-decoration:none;  
+    font-weight: bold;    
+}  
+#nav li {/*后代选择器选择div中行内元素li的设置*/  
+    float: left;  
+    line-height: 37px;  
+    list-style-type:none;  
+    text-align:center;  
+    position:relative;/*给下拉菜单的父元素设置为相对定位*/    
+}  
+#link #link_left {  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    line-height: 32px;  
+    font-weight: bold;  
+    color: #009966;  
+    float: left;  
+    height: 32px;  
+    width: 80px;  
+    padding-left: 10px;  
+}  
+#link #link_right {  
+    line-height: 32px;  
+    float: left;  
+    height: 32px;  
+    width: 908px;  
+}  
+#nav a:link{/*后代选择器选择div中行内选择a设置未访问的链接状态*/  
+    color:#FFFFFF;  
+    text-decoration:none;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    width:89px;  
+    height:37px;  
+    display:block;  
+}  
+#nav a:visited{/*后代选择器选择div中行内选择a设置已访问的链接状态*/  
+    color:#FFFFFF;  
+    text-decoration:none;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    width:89px;  
+    height:37px;  
+    display:block;  
+}  
+#nav a:hover{/*后代选择器选择div中行内选择a设置鼠标悬浮在链接的的状态*/  
+    color:#FFFFFF;  
+    text-decoration:none;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    background-color: #009966;  
+    width:89px;  
+    height:37px;  
+    display:block;  
+}  
+/*第三次添加内容标题栏的代码*/  
+img { /*消除图片的默认格式*/  
+    border:none;  
+}  
+.news_left_titlebar {  
+    background-repeat: no-repeat;  
+    height: 31px;  
+    width: 233px;  
+    border-bottom-width: 1px;  
+    border-bottom-style: dashed;  
+    border-bottom-color: #CCCCCC;  
+    background-color: #FFFFFF;  
+    font-size: 14px;  
+    line-height: 32px;  
+    font-weight: bold;  
+    color: #009966;  
+}  
+.news_left_titlebar img {/*设置图片的格式*/  
+    float: left;  
+    height: 14px;  
+    width: 14px;  
+    margin-top: 9px;  
+    margin-right:5px;  
+}  
+.news_mid_titlebar {  
+    background-image: url(images/n_title_bg.gif);  
+    background-repeat: repeat-x;  
+    height: 32px;  
+    width: 445px;  
+    font-size: 14px;  
+    line-height: 32px;  
+    font-weight: bold;  
+    color: #009966;  
+    padding-left: 10px;  
+}  
+.news_right_titlebar {  
+    background-image: url(images/n_title_bg.gif);  
+    background-repeat: repeat-x;  
+    height: 32px;  
+    width: 290px;  
+    font-size: 14px;  
+    line-height: 32px;  
+    font-weight: bold;  
+    color: #009966;  
+    padding-left: 10px;  
+}  
+#copyright #copyright_top {  
+    height: 20px;  
+    width: 998px;  
+    text-align:center;  
+    line-height:20px;  
+    padding-top:20px;  
+}  
+#copyright #copyright_bottom {  
+    height: 20px;  
+    width: 998px;  
+    text-align:center;  
+    line-height:20px;  
+    padding-bottom:20px;  
+}  
+/*第四次代码左半部分内容的添加*/  
+li {   
+    list-style-type:none;  
+}  
+#news #news_left #news_left_top #news_left_top_content {  
+    height: 210px;  
+    width: 233px;  
+    overflow: hidden;  
+    padding-top:3px;  
+    padding-bottom:3px;  
+}  
+#news #news_left #news_left_top #news_left_top_content li {  
+    float: left;  
+    height: 30px;  
+    width: 233px;  
+    display:block;  
+}  
+#news #news_left #news_left_top #news_left_top_content li a:link{  
+    color:#999999;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    width:233px;  
+    height:30px;  
+    display:block;  
+    text-align:left;  
+    line-height:30px;  
+    vertical-align:middle;  
+}  
+#news #news_left #news_left_top #news_left_top_content li a:visited{  
+    color:#999999;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    width:233px;  
+    height:30px;  
+    display:block;  
+    text-align:left;  
+    line-height:30px;  
+    vertical-align:middle;  
+}  
+#news #news_left #news_left_top #news_left_top_content li a:hover{  
+    color:#FFFFFF;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    background-color: #009966;  
+    width:233px;  
+    height:30px;  
+    display:block;  
+    text-align:left;  
+    line-height:30px;  
+    vertical-align:middle;  
+}  
+#news #news_left #news_left_mid #news_left_mid_content {  
+    height: 196px;  
+    width: 200px;  
+    overflow: hidden;  
+    padding-top:6px;  
+    padding-bottom:6px;  
+    padding-left:13px;  
+    padding-right:20px;  
+}  
+#news #news_left #news_left_mid #news_left_mid_content a:link{  
+    color:#999999;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    width:100px;  
+    height:27px;  
+    display:block;  
+    text-align:center;  
+    line-height:27px;  
+    vertical-align:middle;  
+}  
+#news #news_left #news_left_mid #news_left_mid_content a:visited{  
+    color:#999999;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    width:100px;  
+    height:27px;  
+    display:block;  
+    text-align:center;  
+    line-height:27px;  
+    vertical-align:middle;  
+}  
+#news #news_left #news_left_mid #news_left_mid_content a:hover{  
+    color:#FFFFFF;  
+    font-family: "微软雅黑";  
+    font-size: 14px;  
+    font-weight: bold;  
+    background-color: #009966;  
+    width:100px;  
+    height:27px;  
+    display:block;  
+    text-align:center;  
+    line-height:27px;  
+    vertical-align:middle;  
+}  
+/*第五次代码中间内容一部分的添加*/  
+#news #news_mid #news_mid_top #news_mid_top_content #news_mid_top_content1 {  
+    background-color:#CCCCCC;  
+    height: 256px;  
+    width: 455px;  
+}  
+#news #news_mid #news_mid_top #news_mid_top_content #news_mid_top_content2 {  
+    height: 232px;  
+    width: 455px;  
+}  
+#news #news_mid #news_mid_top #news_mid_top_content #news_mid_top_content2 li {  
+    line-height: 24px;  
+    border-bottom-width: 1px;  
+    border-bottom-style: dashed;  
+    border-bottom-color: #CCCCCC;  
+}  
+#news #news_mid #news_mid_top #news_mid_top_content #news_mid_top_content2 img {  
+    float: left;  
+    height: 16px;  
+    width: 16px;  
+    margin-top: 5px;  
+}  
+#news #news_mid #news_mid_bottom #news_mid_bottom_content li {  
+    line-height: 24px;  
+    border-bottom-width: 1px;  
+    border-bottom-style: dashed;  
+    border-bottom-color: #CCCCCC;  
+}  
+#news #news_mid #news_mid_bottom #news_mid_bottom_content img {  
+    float: left;  
+    height: 16px;  
+    width: 16px;  
+    margin-top: 5px;  
+}  
+/*第五次代码右半部分内容的添加*/  
+#news #news_right #news_right_top #news_right_top_content li {  
+    line-height: 23px;  
+    border-bottom-width: 1px;  
+    border-bottom-style: dashed;  
+    border-bottom-color: #CCCCCC;  
+}  
+#news #news_right #news_right_mid #news_right_mid_content #news_right_mid_content1 {  
+    height: 100px;  
+    width: 300px;  
+    margin-top: 54px;  
+    margin-bottom: 54px;  
+}  
+#news #news_right #news_right_mid #news_right_mid_content li {  
+    line-height: 24px;  
+    border-bottom-width: 1px;  
+    border-bottom-style: dashed;  
+    border-bottom-color: #CCCCCC;  
+}  
+#news #news_right #news_right_bottom #news_right_bottom_content li {  
+    line-height: 24px;  
+    border-bottom-width: 1px;  
+    border-bottom-style: dashed;  
+    border-bottom-color: #CCCCCC;  
+}  
+/*第六次添加导航栏下拉菜单的代码*/  
+#nav #bzsy {  
+    background-color: #009900;  
+    display: none;  
+    height: 37px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;/*下拉列表设置为绝对定位*/  
+    z-index: 99;/*设置元素的堆叠属性*/  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #bxgk {  
+    background-color: #009900;  
+    display: none;  
+    height: 148px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #jyjx {  
+    background-color: #009900;  
+    display: none;  
+    height: 222px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #kxyj {  
+    background-color: #009900;  
+    display: none;  
+    height: 111px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #xsgz {  
+    background-color: #009900;  
+    display: none;  
+    height: 185px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #zsjy {  
+    background-color: #009900;  
+    display: none;  
+    height: 222px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #dtjs {  
+    background-color: #009900;  
+    display: none;  
+    height: 111px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #kysb {  
+    background-color: #009900;  
+    display: none;  
+    height: 74px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
+}  
+#nav #sxjd {  
+    background-color: #009900;  
+    display: none;  
+    height: 185px;  
+    width: 89px;  
+    overflow: hidden;  
+    position: absolute;  
+    z-index: 99;  
+    left: 0px;  
+    top: 37px;  
