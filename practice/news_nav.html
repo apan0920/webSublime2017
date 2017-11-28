@@ -7,6 +7,14 @@
 	<link rel="stylesheet" type="text/css" charset="utf-8" href="./css/news_nav.css">
 	<script type="text/javascript" src="./js/news.js" ></script>
 	<script type="text/javascript" src="./js/jquery-3.2.1/jquery-3.2.1.js"></script>
+	<style>
+ul#awesome #must-buy {
+ color: red;
+}
+.favorite span {
+ color: blue!important;
+}
+</style>
 </head>
 <body>
 	<!-- 命名：1、驼峰命名法
@@ -29,23 +37,33 @@
 		 <!-- 导航菜单 -->
 		<div id="nav">
 			<ul>
-				<li>首页</li>
-				<li>新闻中心</li>
-				<li id="jingwaihezuo">境外合作</li>
+				<li><a href="">首页</a></li>
+				<li><a href="">新闻中心</a></li>
+				<li id="jingwaihezuo"><a href="">境外合作</a>
 					<ul id="jingwaihezuoChildUl">
-						<li>学历</li>
-						<li>合作办学</li>
-						<li>专升本</li>
-						<li>短期教育</li>
-						<li>交流（换）生</li>
+						<li><a href="">学历</a></li>
+						<li><a href="">合作办学</a></li>
+						<li><a href="">专升本</a></li>
+						<li><a href="">短期教育</a></li>
+						<li><a href="">交流（换）生</a></li>
 					</ul>
-				<li>国际合作</li>
-				<li>学生风采</li>
-				<li>学科与师资</li>
-				<li>关于我们</li>
-				<li>项目报名</li>
+				</li>
+				<li><a href="">国际合作</a></li>
+				<li><a href="">学生风采</a></li>
+				<li><a href="">学科与师资</a></li>
+				<li><a href="">关于我们</a></li>
+				<li><a href="">项目报名</a></li>
 			</ul>
 		</div>
+<!-- 		<div>
+	<img src="./image/news/bj2.jpg" style="visibility: hidden" alt="My photo">
+	<div style="display: none;"> <img src="./image/news/zhaosheng.jpg" alt="My photo"> </div>
+	<ul class="shopping-list" id="awesome">
+	 	<li><span>Milk</span></li>
+	 <li class="favorite" id="must-buy"><span class="highlight">I am awesome</span></li>
+	</ul>
+</div>
+<span><div style="height: 20px;background-color: purple;"></div></span> -->
 	</div>
 	<script type="text/javascript">
 		/*$("#nav ul li").on("click",function(){
@@ -54,6 +72,53 @@
 		$("#nav ul li").on("mouseleave",function(){
 			$(this).css("background-color","#004e87");
 		});*/
+		/*console.log(0.2 + 0.1 == 0.3)*/
+		/*var foo = function(){ 
+			console.log("Hi I am inside Foo");
+		};
+
+		foo(); */
+
+/*
+		var salary = "1000$";
+		console.log(salary);
+		(function () {
+			var salary = "9000$";
+		  console.log(salary);
+		  var salary = "5000$";
+		  console.log(salary);
+		})();
+*/
+		
+		/*var salary = "1000$";*/
+		/*(function () {
+		  console.log(salary);
+		  var salary = "5000$";
+		  console.log(salary);
+		})();*/
+		/*C();*/
+
+
+		/*var salary = "1000$";
+		function C() {
+		  console.log(salary);
+		  return;
+		  var salary = "5000$";
+		  console.log(salary);
+		}
+		C();
+*/
+		/*function addBase(base){
+		return function(num){
+		    return base + num;
+		}
+		}
+		var addTen = addBase(10);
+		console.log(addTen);
+		console.log(addTen(5)); //15
+		console.log(addTen(80)); //90
+		console.log(addTen(-5));*/
+
 	</script>
 
 
